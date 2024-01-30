@@ -19,7 +19,9 @@ jobs:
         node-version: '16'
 
     - name: Installing npm
-      run: npm install
+      run: |
+        - pwd
+        - npm install
 
     - name: Starting npm
       run: npm start     
