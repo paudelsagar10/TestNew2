@@ -24,5 +24,6 @@ jobs:
     - name: Installing npm
       run: npm install
 
-    - name: Starting npm
-      run: npm start     
+    - name: Build Application
+      run: |
+        - CI=false npm run build    
