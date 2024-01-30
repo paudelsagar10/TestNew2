@@ -8,18 +8,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults: 
-      run:
-        working-directory: ./all_in_docker/client
+    # defaults: 
+    #   run:
+    #     working-directory: ./all_in_docker/client
       
-    steps:
-    - name: Set Up Node.js
-      uses: actions/setup-node@v3
-      with: 
-        node-version: '16'
+     steps:
+    # - name: Set Up Node.js
+    #   uses: actions/setup-node@v3
+    #   with: 
+    #     node-version: '16'
 
     - name: Installing npm
-      run: pwd
+      run: |
+        - pwd
+        - ls
 
     - name: Starting npm
       run: npm start     
