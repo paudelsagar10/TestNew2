@@ -7,8 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: 
-      - ubuntu-latest
+    runs-on: ubuntu-latest
 
       
     steps:
@@ -18,9 +17,7 @@ jobs:
     #     node-version: '16'
 
     - name: Installing npm
-      run: |
-        - pwd
-        - ls
+      run: ls
 
     - name: Starting npm
       run: npm start     
